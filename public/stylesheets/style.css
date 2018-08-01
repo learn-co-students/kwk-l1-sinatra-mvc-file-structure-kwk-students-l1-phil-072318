@@ -1,0 +1,41 @@
+body { 
+    background: linear-gradient(to bottom, #D8EFFE,white);
+}
+h1 {
+  text-align: center;
+  font-family: helvetica; 
+  font-size: 50px;
+
+}
+
+h2 {
+    
+    font-family: helvetica;
+    font-size: 15px;
+}
+
+h3 {
+    
+    font-family: helvetica;
+    font-size: 15px;
+}
+h4 {
+   
+    font-family: helvetica;
+    font-size: 15px;
+}
+h5 {
+    
+    font-family: helvetica;
+    font-size: 15px;
+}
+h6 {
+   
+    font-family: helvetica;
+    font-size: 15px;
+}
+h7 {
+    
+    font-family: helvetica;
+    font-size: 15px;
+}
