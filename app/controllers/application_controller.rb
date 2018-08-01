@@ -20,6 +20,7 @@ class ApplicationController < Sinatra::Base
     # #return popups[:sad]
     @quotes = emotion_hash(params[:emotion])
     @quote1 = @quotes[:quote1]
+    @quote2 = @quotes[:quote2]
     erb :results
     end
   
