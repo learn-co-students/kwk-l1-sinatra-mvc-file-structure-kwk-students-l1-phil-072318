@@ -66,6 +66,7 @@ def marvordc(string)
 @@BMvsSM += 1
 @@justice += 1
 @@suicide_squad += 1
+@@iron_man3 += 1
 
 def oldornew(string)
   if string == "old"
@@ -79,6 +80,30 @@ def oldornew(string)
 @@antman += 1
 @@avengers += 1
 @@gotg += 1
+@@TDK += 1
+@@TDKR += 1
+@@MOS += 1
+@@green_lantern += 1
+  elsif string == "new"
+@@ww += 1
+@@ww1984 += 1
+@@shazam += 1
+@@BMvsSM += 1
+@@justice += 1
+@@suicide_squad += 1
+@@gotg2 += 1
+@@doctor_strange += 1
+@@captain_marvel += 1
+@@black_panther += 1
+@@SMHomecoming  += 1
+@@avengersAOU += 1
+@@avengersIW += 1
+@@thorRag += 1
+@@antmanATW += 1
+@@captain_americaCW += 1
+
+
+
 
 
 
