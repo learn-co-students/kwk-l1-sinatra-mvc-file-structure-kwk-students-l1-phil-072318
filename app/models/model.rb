@@ -4,10 +4,8 @@ def emotion_hash(emotion)
     @popups = {
       
         :sad => 
-          {:quote1 => 
-            {:picture => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578283/small/1533152964/enhance"}, 
-            :quote2 => 
-            {:picture => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance"}},
+          {:quote1 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578283/small/1533152964/enhance", 
+            :quote2 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance"},
             
             #
             
@@ -29,7 +27,7 @@ def emotion_hash(emotion)
     
     if emotion == "sad"
       #return popups[:sad]
-      return "bye"
+      return @popups[:sad]
     end
   
   if emotion == "stressed"
