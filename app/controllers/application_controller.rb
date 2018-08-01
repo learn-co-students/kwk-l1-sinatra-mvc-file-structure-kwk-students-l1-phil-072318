@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
    	erb :FAQ
   end 
   
-   get "/Aboutus" do
+   get "/aboutus" do
    	erb :about_us
   end 
 end
