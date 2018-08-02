@@ -71,7 +71,7 @@ end
 end
 
 def oldornew(string)
-  if string == "old"
+  if string == "Old"
 @@iron_man += 1
 @@iron_man2 += 1
 @@thor += 1
@@ -86,7 +86,7 @@ def oldornew(string)
 @@TDKR += 1
 @@MOS += 1
 @@green_lantern += 1
-  elsif string == "new"
+  elsif string == "New"
 @@ww += 1
 @@ww1984 += 1
 @@shazam += 1
@@ -107,7 +107,7 @@ def oldornew(string)
 end
 end
 
-def teamrosolo (string)
+def teamorsolo (string)
   if string == "Team"
 @@avengersAOU += 1
 @@avengersIW += 1
@@ -159,7 +159,8 @@ def mood(string)
 @@justice += 1
 @@avengersAOU += 1
 @@avengersIW += 1
-  elsif string == "comical"
+
+  elsif string == "Comical"
 @@iron_man2 += 1
 @@thor += 1
 @@thorTDW += 
@@ -180,71 +181,110 @@ end
   
   
 def results
-if @@iron_man = 4
-  puts "Iron Man"
-elsif @@iron_man2 = 4
-  puts "Iron Man 2"
-elsif @@iron_man3 = 4
-  puts "Iron Man 3"
-elsif @@thor = 4
-  puts "Thor"
-elsif @@thorTDW = 4
-  puts "Thor: The Dark World"
-elsif @@thorRag = 4
-  puts "Thor: Ragnarok"
-elsif @@hulk = 4
-  puts "The Incredible Hulk"
-elsif @@captain_americaFA = 4
-  puts "Captain America: The First Avenger"
-elsif @@captain_americaTWS = 4
-  puts "Captain America: The WInter Soldier"
-elsif @@captain_americaCW = 4
-  puts "Captain America: Civil War"
-elsif @@antman = 4
-  puts "Ant-Man"
-elsif @@antmanATW = 4
-  puts "Ant-Man and The Wasp"
-elsif @@avengers = 4
-  puts "The Avengers"
-elsif @@avengersAOU = 4
-  puts "The Avengers: Age of Ultron"
-elsif @@avengersIW = 4
-  puts "The Avengers: Infinity War"
-elsif @@gotg = 4
-  puts "Guardians of the Galaxy"
-elsif @@gotg2 = 4
-  puts "Guardians of the Galaxy vol.2"
-elsif @@doctor_strange = 4
-  puts "Doctor Strange"
-elsif @@captain_marvel = 4
-  puts "Captain Marvel"
-elsif @@black_panther = 4
-  puts "Black Panther"
-elsif @@SMHomecoming  = 4
-  puts "Spider-Man: Homecoming"
-elsif @@TDK = 4
-  puts "The Dark Night"
-elsif @@TDKR = 4
-  puts "The Dark Knight Rises"
-elsif @@MOS = 4
-  puts "Man of Steel"
-elsif @@green_lantern = 4
-  puts "Green Lantern"
-elsif @@ww = 4
-  puts "Wonder Woman"
-elsif @@ww1984 = 4
-  puts "Wonder Woman - 1984"
-elsif @@shazam = 4
-  puts "Shazam!"
-elsif @@BMvsSM = 4
-  puts "Batman vs Superman"
-elsif @@justice = 4
-  puts "Justice Leauge"
-elsif @@suicide_squad = 4
-  puts "Suicide Squad"
-else
-  puts "No movies matched your preferences"
+  
+  results_array = []
+  
+if @@iron_man == 4
+  results_array.push("Iron Man")
 end
+if @@iron_man2 == 4
+  results_array.push("Iron Man 2")
+end
+if @@iron_man3 == 4
+  results_array.push("Iron Man 3")
+end
+if @@thor == 4
+  results_array.push("Thor")
+end
+if @@thorTDW == 4
+ results_array.push("Thor: The Dark World")
+ end
+if @@thorRag == 4
+  results_array.push("Thor: Ragnarok")
+end
+if @@hulk == 4
+  results_array.push("The Incredible Hulk")
+end
+if @@captain_americaFA == 4
+ results_array.push("Captain America: The First Avenger")
+ end
+if @@captain_americaTWS == 4
+  results_array.push("Captain America: The WInter Soldier")
+end
+if @@captain_americaCW == 4
+  results_array.push("Captain America: Civil War")
+end
+if @@antman == 4
+  results_array.push("Ant-Man")
+end
+if @@antmanATW == 4
+  results_array.push("Ant-Man and The Wasp")
+end
+if @@avengers == 4
+  results_array.push("The Avengers")
+end
+if @@avengersAOU == 4
+  results_array.push("The Avengers: Age of Ultron")
+end
+if @@avengersIW == 4
+  results_array.push("The Avengers: Infinity War")
+end
+if @@gotg == 4
+  results_array.push("Guardians of the Galaxy")
+end
+if @@gotg2 == 4
+  results_array.push("Guardians of the Galaxy vol.2")
+end
+if @@doctor_strange == 4
+ results_array.push("Doctor Strange")
+ end
+if @@captain_marvel == 4
+  results_array.push("Captain Marvel")
+end
+if @@black_panther == 4
+  results_array.push("Black Panther")
+end
+if @@SMHomecoming  == 4
+  results_array.push("Spider-Man: Homecoming")
+end
+if @@TDK == 4
+  results_array.push("The Dark Night")
+end
+if @@TDKR == 4
+  results_array.push("The Dark Knight Rises")
+end
+if @@MOS == 4
+  results_array.push("Man of Steel")
+end
+if @@green_lantern == 4
+  results_array.push("Green Lantern")
+end
+if @@ww == 4
+  results_array.push("Wonder Woman")
+end
+if @@ww1984 == 4
+  results_array.push("Wonder Woman - 1984")
+end
+if @@shazam == 4
+  results_array.push("Shazam!")
+end
+if @@BMvsSM == 4
+  results_array.push("Batman vs Superman")
+end
+if @@justice == 4
+  results_array.push("Justice Leauge")
+end
+if @@suicide_squad == 4
+  results_array.push("Suicide Squad")
+  end
+
+if results_array.any? == false
+  results_array.push("No movies matched your preferences")
+end
+
+return results_array
+#return ["hi", "bye"]
+
 end
 
 

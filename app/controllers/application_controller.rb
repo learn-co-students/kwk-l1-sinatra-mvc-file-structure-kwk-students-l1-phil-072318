@@ -9,10 +9,11 @@ class ApplicationController < Sinatra::Base
   	erb :index
   end
   
-  get "/results" do
-    erb :results
-    return results
-    end
-  
-  
+  post '/' do
+  marvordc(params[:questionone])
+  oldornew(params[:questiontwo])
+  teamorsolo(params[:questionthree])
+  mood(params[:questionfour])
+  @the_real_result = results
+  end
 end
