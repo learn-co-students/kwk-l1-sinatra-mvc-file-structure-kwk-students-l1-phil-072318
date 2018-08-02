@@ -11,6 +11,7 @@ ul {
  body, html {
     height: 100%;
     background-size:100%
+ 
 }
 
 h1 {
@@ -61,3 +62,5 @@ h4 {
   font-family: monospace;
   font-size: 20px;
 }
+
+
