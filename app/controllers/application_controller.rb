@@ -21,38 +21,8 @@ class ApplicationController < Sinatra::Base
    	erb :about_us
   end 
   
-  post '/' do
-    @my_result = get_warm(params[:question1])
-    erb :results
-  end
-  
-  post '/' do
-    @my_result = get_cool(params[:question1])
-    erb :results
-  end
-  
-  post '/' do
-    @my_result = get_cheap(params[:question1])
-    erb :results
-  end
-  
-  post '/' do
-    @my_result = get_fancy(params[:question1])
-    erb :results
-  end
-  
-  post '/' do
-    @my_result = get_friendly(params[:question1])
-    erb :results
-  end
-  
-  post '/' do
-    @my_result = get_lonely(params[:question1])
-    erb :results
-  end
-  
-  post '/' do
-    @my_result = get_safe(params[:question1])
+  post '/quiz' do
+    get_results(params[:question1])
     erb :results
   end
 

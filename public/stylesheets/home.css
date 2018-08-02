@@ -1,3 +1,4 @@
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -20,7 +21,7 @@ h1 {
   padding: 10px;
   color: black;
   text-align: center;
-  font-family: Futura;
+  font-family: Kirang Haerang;
   font-size: 75px;
   
     
@@ -29,8 +30,8 @@ h1 {
 h2 {
   color: black;
   text-align: center;
-  font-family: monospace;
-  font-size: 50px
+  font-family: Kirang Haerang;
+  font-size: 50px;
   
 }
 
@@ -76,6 +77,14 @@ h3 {
   color: black;
   text-align: center;
   font-family: monospace;
+  font-size: 20px;
+  line-height: 40.5px;
+}
+
+h5 {
+  color: black;
+  text-align: center;
+  font-family: sans-Serif;
   font-size: 20px;
   line-height: 40.5px;
 }

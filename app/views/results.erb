@@ -1,13 +1,26 @@
+<!DOCTYPE html>
 <html>
-  <head><link rel="stylesheet" href="results.css">
+  <head><link rel="stylesheet" href="stylesheets/results.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kirang+Haerang|Open+Sans+Condensed:300|Poppins" rel="stylesheet">
-    <title>results</title>
+    <title>Your Perfect Vacation</title>
   </head>
   <body>
+     <ul> <!--navigation bar-->
+  <li><a href="/">Home</a></li>
+  <li><a href="quiz">Quiz</a></li>
+  <li><a href="FAQ">FAQ</a></li>
+  <li><a href="about_us">About Us</a></li>
+</ul>
   <h1>Your travel destinations are:</h1>
     <div class="background">
   <div class="transbox">
-    <p><%@myresults%></p>
+<!--<p><%@@myresult.each do |destination|%>-->
+<!--    <%=destination%>-->
+<!--    <%end%></p>-->
+<p><%=@@myresult.sample%></p>
+<p><%=@@myresult.sample%></p>
+<p><%=@@myresult.sample%></p>
+<p><%=@@myresult.sample%></p>
   </div>
 </div>
   </body>
