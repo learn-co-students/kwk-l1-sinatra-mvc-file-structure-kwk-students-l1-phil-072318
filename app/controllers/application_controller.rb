@@ -6,10 +6,12 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-  	erb :index
+  	erb :home_page
   end
-  
-  post '/' do
+  get "/quiz" do
+    erb :index
+  end
+  post '/quiz' do
   marvordc(params[:questionone])
   oldornew(params[:questiontwo])
   teamorsolo(params[:questionthree])

@@ -66,7 +66,6 @@ def marvordc(string)
 @@BMvsSM += 1
 @@justice += 1
 @@suicide_squad += 1
-@@iron_man3 += 1
 end
 end
 
@@ -163,7 +162,7 @@ def mood(string)
   elsif string == "Comical"
 @@iron_man2 += 1
 @@thor += 1
-@@thorTDW += 
+@@thorTDW += 1
 @@green_lantern += 1
 @@antman += 1
 @@shazam += 1
@@ -181,7 +180,7 @@ end
   
   
 def results
-  
+
   results_array = []
   
 if @@iron_man == 4
@@ -198,7 +197,7 @@ if @@thor == 4
 end
 if @@thorTDW == 4
  results_array.push("Thor: The Dark World")
- end
+end
 if @@thorRag == 4
   results_array.push("Thor: Ragnarok")
 end
@@ -207,7 +206,7 @@ if @@hulk == 4
 end
 if @@captain_americaFA == 4
  results_array.push("Captain America: The First Avenger")
- end
+end
 if @@captain_americaTWS == 4
   results_array.push("Captain America: The WInter Soldier")
 end
@@ -237,7 +236,7 @@ if @@gotg2 == 4
 end
 if @@doctor_strange == 4
  results_array.push("Doctor Strange")
- end
+end
 if @@captain_marvel == 4
   results_array.push("Captain Marvel")
 end
@@ -276,7 +275,7 @@ if @@justice == 4
 end
 if @@suicide_squad == 4
   results_array.push("Suicide Squad")
-  end
+end
 
 if results_array.any? == false
   results_array.push("No movies matched your preferences")

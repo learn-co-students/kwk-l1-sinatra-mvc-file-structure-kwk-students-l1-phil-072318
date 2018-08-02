@@ -3,11 +3,72 @@
   <head>
     <meta charset="UTF-8">
     <title>Quiz</title>
+    <style>
+      body {
+background-image: url(http://getwallpapers.com/wallpaper/full/5/2/5/1061511-free-download-captain-marvel-wallpaper-1920x1080-for-ipad-pro.jpg);
+  background-size: 1450px;
+}
+h1 { 
+font-family: Bree Serif;
+}
+p {
+  font-family: Bree Serif;
+}
+.quiz {
+  font-family: Bree Serif; 
+  background-color: #FFFFFF;
+  padding: 10px 20px;
+  margin: 20px;
+  width: 500px;
+  border: 5px solid red;
+}
+.quiz input {
+  
+}
+input[type=radio] {
+    margin: 10px 10px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Bree Serif;
+    font-size: 12pt;
+}
+input[type=radio]:hover {
+  box-shadow: 5px 5px 10px  #65696C;
+  
+  
+}
+
+
+input[type=submit] {
+ background-color: #2471A3;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-left: 1.5%;
+    cursor: pointer;
+    font-family: Bree Serif;
+    font-size: 12pt;
+}
+
+input[type=submit]:hover {
+  box-shadow: 5px 5px 10px  #65696C;
+  color: #2471A3;
+  background-color: white;
+  
+}
+    </style>
   </head>
 
   <body>
+    <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
     <h1>Take this quiz to find a superhero movie to fit your needs</h1>
    <!-- Insert Your Form Below -->
+   <div class="quiz">
     <form method = POST>
         <p>Marvel movie or DC movie?</p>
       <input type= "radio" name = "questionone" value = "Marvel">Marvel
@@ -24,7 +85,9 @@
       <p>Serious movie or a comical movie?</p>
       <input type= "radio" name = "questionfour" value = "Serious">Serious
       <input type= "radio" name = "questionfour" value = "Comical">Comical
-      
+      <br>
+      <br>
+      </div>
       <input type= "submit" value= "Find the movies for you">
   </body>
 </html>
