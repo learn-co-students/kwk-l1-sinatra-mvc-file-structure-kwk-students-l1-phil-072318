@@ -18,6 +18,8 @@ class ApplicationController < Sinatra::Base
     # if emotion.to_s == "sad"
     
     # #return popups[:sad]
+    
+    # this is basically just saying what @quotes equals and what the argument is inputing, then decalres what quote one and 2 equal so in results u can just call quote1 and quote2
     @quotes = emotion_hash(params[:emotion])
     @quote1 = @quotes[:quote1]
     @quote2 = @quotes[:quote2]
