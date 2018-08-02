@@ -5,7 +5,7 @@
    <title>Movie list</title>
 	 <style>
 		 body {
-background-image: url(http://wall2born.com/data/out/815/image-43706442-the-flash-4k-wallpaper.jpg);
+background-image: url("http://wall2born.com/data/out/815/image-43706442-the-flash-4k-wallpaper.jpg");
   background-size: 1500px;
 }
 h1 { 
@@ -23,9 +23,6 @@ p {
   width: 500px;
   border: 5px solid red;
 }
-.quiz input {
-  
-}
 input[type=radio] {
     margin: 10px 10px;
     color: white;
@@ -38,8 +35,6 @@ input[type=radio] {
 }
 input[type=radio]:hover {
   box-shadow: 5px 5px 10px  #65696C;
-  
-  
 }
 
 
@@ -66,48 +61,32 @@ input[type=submit]:hover {
  </head>
 
  <body>
-     <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
-   <h1>
-       Choose A Movie!
-     </h1>
-      <style>
-body {
-        color: white;
-        
-}
-</style>
+
    </h1>
   <!-- Insert Your Form Below -->
-   <div class="quiz" 
-   <form method = POST>
-      
-     
-     
-     
-     
-     
-     
-     
+   <div class="quiz"> 
+   <form method = POST>   
     <br>
    <br>
    <div>
      <input type= "submit" value= "Go Back To Home">
   </div>
- </body>
-</html>
-  <div class="dropdown">
-  <button 
-       class="dropbtn">Genre</button>
+ 
+ <div class="dropdown">
+  <button class="dropbtn">Genre</button>
   <div class="dropdown-content">
-    <a href="#">Action</a>
-    <a href="#">Comedy</a>
-    <a href="#">Teen-Lead</a>
-    <a href="#">Team-Up!</a>
-  </div>
+    <a href="<%=action_and_adventure%>">Action and Adventure</a> 
+    <a href="<%=comedy%>">Comedy</a>
+    <a href="<%=teen_leads%>">Teen-Lead</a>
+    <a href="<%=team_up%>">Team-Up!</a>
+ </div>
  </div>
  <div class="dropdown">
-  <button class="dropbtn">Mood</button>
+ <button class="dropbtn">Mood</button>
   <div class="dropdown-content">
-    <a href="#">Serious</a>
-    <a href="#">Funny</a>
-   </div>
+    <a href="<%=serious%>">Serious</a>
+    <a href="<%=funny%>">Funny</a>
+ </div>
+ </div>
+ </body>
+ </html>
