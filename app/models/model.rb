@@ -21,10 +21,10 @@ def emotion_hash(emotion)
             #
             
          :unmotivated => 
-          {:quote1 => "http://cdn.thefunnybeaver.com/wp-content/uploads/2017/04/Motivational-Quotes-For-Success-227.jpg", 
-            :quote2 => "http://cdn.thefunnybeaver.com/wp-content/uploads/2017/04/Motivational-Quotes-For-Success-234.jpg",
+          {:quote1 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113997506521/medium/1533234277/enhance", 
+            :quote2 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113997506559/medium/1533234279/enhance",
             :quote3 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance",
-            :spotify => "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DXdxcBWuJkbcy"}
+            :spotify => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113997513077/medium/1533234584/enhance"}
           
     } #end of popup hash
     
