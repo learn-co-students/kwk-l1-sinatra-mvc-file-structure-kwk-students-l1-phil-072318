@@ -13,6 +13,10 @@ class ApplicationController < Sinatra::Base
     erb :aboutus
   end 
   
+   get "/instagrams" do
+  	erb :instagrams
+  end
+  
   get "/sad" do
     erb :sad
   end
@@ -61,6 +65,6 @@ class ApplicationController < Sinatra::Base
     @spotify = @quotes[:spotify]
     erb :results
     end
-  
+
 end
 
