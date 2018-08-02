@@ -6,7 +6,11 @@
     <h1>You should watch...</h1>
   </head>
   <body>
-  
-  <%= @the_real_result %>
+    
+    <%marvordc(params[:questionone])
+  oldornew(params[:questiontwo])
+  teamorsolo(params[:questionthree])
+  mood(params[:questionfour])
+  @the_real_result = results%>
   </body>
 </html>

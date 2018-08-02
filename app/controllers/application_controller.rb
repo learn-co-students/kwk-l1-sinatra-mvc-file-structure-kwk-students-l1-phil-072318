@@ -19,13 +19,13 @@ class ApplicationController < Sinatra::Base
   get "/quiz" do
     erb :index
   end
-  post '/quiz' do
+  get '/results' do 
+  erb :results
   marvordc(params[:questionone])
   oldornew(params[:questiontwo])
   teamorsolo(params[:questionthree])
   mood(params[:questionfour])
   @the_real_result = results
-    end
   end
 end
 
