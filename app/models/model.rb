@@ -14,8 +14,8 @@ def emotion_hash(emotion)
             
         :stressed => 
           {:quote1 =>"https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance", 
-            :quote2 => "https://titular-journal.com/wp-content/uploads/2018/03/stress-quotes-fascinating-best-25-stress-quotes-ideas-on-pinterest-do-not-worry-quotes.jpg",
-            :quote3 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance",
+            :quote2 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113997398266/large/1533229408/enhance",
+            :quote3 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113997398254/medium/1533229408/enhance",
             :spotify => "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX1s9knjP51Oa"},
             
             #
