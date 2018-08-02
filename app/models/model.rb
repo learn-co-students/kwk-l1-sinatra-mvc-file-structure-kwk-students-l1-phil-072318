@@ -1,28 +1,45 @@
-# class Model
-#   # Replace with Dog clas
-# end
 
 def emotion_hash(emotion)
   
-    popups = {
-      
-        :sad => {:quote1 => 
-            {:picture => "https://www.coolfunnyquotes.com/images/quotes/t-cinderalla-shoe-fit-perfectly.jpg"}, 
+    @popups = {
+      # in each of these you call the emotion and when that emotion is called the quotes will also be called, you need to also call the quotes seperately
+        :sad => 
+          {:quote1 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578283/small/1533152964/enhance", 
+            :quote2 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113997339106/medium/1533226726/enhance",
+            :quote3 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113997355225/medium/1533227367/enhance",
+            :spotify => "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DXdPec7aLTmlC"
+          },
             
-            :quote2 => 
-            {:picture => "https://www.coolfunnyquotes.com/images/quotes/t-cinderalla-shoe-fit-perfectly.jpg"}}
+            #
             
+        :stressed => 
+          {:quote1 =>"https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance", 
+            :quote2 => "https://titular-journal.com/wp-content/uploads/2018/03/stress-quotes-fascinating-best-25-stress-quotes-ideas-on-pinterest-do-not-worry-quotes.jpg",
+            :quote3 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance",
+            :spotify => "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX1s9knjP51Oa"},
+            
+            #
+            
+         :unmotivated => 
+          {:quote1 => "http://cdn.thefunnybeaver.com/wp-content/uploads/2017/04/Motivational-Quotes-For-Success-227.jpg", 
+            :quote2 => "http://cdn.thefunnybeaver.com/wp-content/uploads/2017/04/Motivational-Quotes-For-Success-234.jpg",
+            :quote3 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance",
+            :spotify => "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DXdxcBWuJkbcy"}
+          
     } #end of popup hash
     
+    #if statements that will basically define what will happen if the button = emotion
     if emotion == "sad"
-      return popups[:sad]
+      #return popups[:sad]
+      return @popups[:sad]
     end
-    
-    
-    
-  # else
-  #   #return popups[]
-  # end
+  
+  if emotion == "stressed"
+   return @popups[:stressed]
+  end 
+  
+  if emotion == "unmotivated"
+    return @popups[:unmotivated]
+  end 
     
 end #emotion hash end
-
