@@ -1,3 +1,5 @@
+
+def resetquiz
 @@iron_man = 0
 @@iron_man2 = 0
 @@iron_man3 = 0
@@ -31,6 +33,7 @@
 @@BMvsSM = 0
 @@justice = 0
 @@suicide_squad = 0
+end
 
 def marvordc(string)
   if string == "Marvel"

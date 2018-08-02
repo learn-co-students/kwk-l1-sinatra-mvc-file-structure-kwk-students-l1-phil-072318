@@ -21,6 +21,7 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   post '/quiz' do 
+        resetquiz
         marvordc(params[:questionone])
         oldornew(params[:questiontwo])
         teamorsolo(params[:questionthree])
