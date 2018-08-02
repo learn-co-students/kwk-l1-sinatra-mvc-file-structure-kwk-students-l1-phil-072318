@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
  <head>
+  <div class="boxed1"
+    <ul>
+  <li><a href="aboutus">About Us</a></li>
+  <li><a href="list">Movie List</a></li>
+  <li><a href="quiz">Quiz</a></li>
+  <li><a href="/">Home</a></li>
+  </ul>
+  </div> 
+   <h1> Movie List</h1>
+   
    <meta charset="UTF-8">
    <title>Movie list</title>
 	 <style>
@@ -8,6 +18,30 @@
 background-image: url("http://wall2born.com/data/out/815/image-43706442-the-flash-4k-wallpaper.jpg");
   background-size: 1500px;
 }
+.boxed1 {
+    list-style-type: none;
+    background-color: white;
+  }
+
+li a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    float: right ;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: solid black 2px;
+    background-color: white;
+    font-size: 16pt;
+    font-family: 'Bree Serif'
+   
+}
+li a:hover {
+    background-color: white;
+    color: grey;
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px  #65696C;
+}  
 h1 { 
 font-family: Bree Serif;
 }
@@ -68,24 +102,20 @@ input[type=submit]:hover {
    <form method = POST>   
     <br>
    <br>
-   <div>
-     <input type= "submit" value= "Go Back To Home">
-  </div>
- 
  <div class="dropdown">
   <button class="dropbtn">Genre</button>
   <div class="dropdown-content">
-    <a href="<%=action_and_adventure%>">Action and Adventure</a> 
-    <a href="<%=comedy%>">Comedy</a>
-    <a href="<%=teen_leads%>">Teen-Lead</a>
-    <a href="<%=team_up%>">Team-Up!</a>
+    <a href="<%@@action%>">Action</a> 
+    <a href="<%@@comedy%>">Comedy</a>
+    <a href="<%@@teen_leads%>">Teen-Lead</a>
+    <a href="<%@@team_up%>">Team-Up!</a>
  </div>
  </div>
  <div class="dropdown">
  <button class="dropbtn">Mood</button>
   <div class="dropdown-content">
-    <a href="<%=serious%>">Serious</a>
-    <a href="<%=funny%>">Funny</a>
+    <a href="<%@@serious%>">Serious</a>
+    <a href="<%@@funny%>">Funny</a>
  </div>
  </div>
  </body>
