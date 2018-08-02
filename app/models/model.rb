@@ -281,7 +281,9 @@ if results_array.any? == false
   results_array.push("No movies matched your preferences")
 end
 
-return results_array
+
+return "You should watch... 
+#{results_array}"
 #return ["hi", "bye"]
 
 end

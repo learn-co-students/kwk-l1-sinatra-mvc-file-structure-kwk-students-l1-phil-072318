@@ -25,6 +25,7 @@ class ApplicationController < Sinatra::Base
   teamorsolo(params[:questionthree])
   mood(params[:questionfour])
   @the_real_result = results
+    end
   end
 end
 
