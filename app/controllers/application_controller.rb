@@ -8,6 +8,14 @@ class ApplicationController < Sinatra::Base
   get "/" do
   	erb :home_page
   end
+  
+  get "/aboutus" do
+  erb :about_us
+  end
+  
+  get "/list" do
+    erb :list
+  end
   get "/quiz" do
     erb :index
   end
@@ -19,3 +27,4 @@ class ApplicationController < Sinatra::Base
   @the_real_result = results
   end
 end
+
