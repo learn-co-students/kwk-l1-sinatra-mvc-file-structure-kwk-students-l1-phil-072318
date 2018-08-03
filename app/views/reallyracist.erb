@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>body{background: #b29f94;  /* fallback for old browsers */
+    <style>
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+    body{background: #b29f94;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #b29f94, #603813,#b29f94);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #b29f94, #603813, #b29f94); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -14,7 +35,13 @@
     </style>
   </head>
 <body>
-
+<ul class="refs">
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/racism">Racism</a></li>
+  <li><a href="/sexism">Sexism</a></li>
+  <li><a href="/impact">Impact</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
 
 <h1> You're Strongly Biased</h1>
 According to the Stanford Encyclopedia of Philosphophy, <a href="https://plato.stanford.edu/entries/implicit-bias/">Implicit Bias </a> refers to the<br> relatively unconscious and relatively automatic features of prejudiced judgment <br>and social behavior.<br><br>
