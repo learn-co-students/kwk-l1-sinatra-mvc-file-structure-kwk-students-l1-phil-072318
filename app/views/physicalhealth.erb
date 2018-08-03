@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <title>Physical Health</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://data.whicdn.com/images/310881265/large.png');
+    min-height: 100%;
+}
+
+/* Second image (me time) */
+.bgimg-2 {
+    background-image: url("https://78.media.tumblr.com/cd91deeae7bc611c84e77e9cbb04c345/tumblr_o4brh6hPeH1v3y85mo1_500.png");
+    min-height: 500px;
+    width: auto;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/" class="w3-bar-item w3-button"> HOME</a>
+    <a href="#aboutus" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT US</a>
+    <a href="#metime" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> ME TIME</a>
+    <a href="/physicalhealth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> PHYSICAL HEALTH</a>
+    <a href="#peaceofmind" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESOURCES</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#peaceofmind" class="w3-bar-item w3-button" onclick="toggleFunction()"> RESOURCES</a>
+    <a href="#metime" class="w3-bar-item w3-button" onclick="toggleFunction()"> ME TIME</a>
+    <a href="#physicalhealth" class="w3-bar-item w3-button" onclick="toggleFunction()"> PHYSICALHEALTH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> Physical <span class="w3-hide-small"> Health </span></span>
+  </div>
+</div>
+
+<!-- Container (Resources/Peaceofmind) -->
+<div class="w3-content w3-container w3-padding-64" id="aboutus">
+  <h3 class="w3-center"> FITNESS</h3>
+  <p class="w3-center"><em>  Fitness is a great way to relieve stress and calm the body and mind.  There are different variations of fitness routines that help with stress and anxiety.  </em></p>
+  <p><br>
+       Yoga is a popular mind-body practice that brings together physical and mental disciplines to help you relax while increasing physical strength and flexibility. It combines poses with controlled breathing and mindfulness. According to Mayo Clinic, yoga can help reduce stress, lower blood pressure, and lower heart rate.
+
+        <br>
+        <br>
+        <iframe width="300" height="250" src="https://www.youtube.com/embed/rXBSXF8VVoI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+
+        <br>
+
+       Tai Chi is an ancient Chinese non-competitive martial art. It’s popular due to its health benefits and known to be one of the most effective exercises for both mind and body. Like yoga, there are many different styles and forms of Tai Chi. This exercise links flowing physical movements with breathing. According to Tai Chi for Health Institute, studies have shown that Tai Chi improves muscular strength, flexibility, immunity, and can help relieve pain – all while achieving a sense of peace and serenity. Check out this quick introductory to Tai Chi for stress reduction.
+
+    <br> 
+    <br>
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/kAKXr-MpCbo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <br>
+
+    <br>
+    <br>
+       Kick Boxing burns calories like crazy and helps maintain a high metabolism. Kickboxing is a blend of martial arts and boxing, and can be practiced for general fitness, self-defense, or sport. It reduces stress by teaching proper breathing techniques, building confidence, and giving you an instant energy boost. Smack down your stress with this kickboxing cardio workout.
+
+       <br>
+      <br>
+       <iframe width="300" height="250"src="https://www.youtube.com/embed/F_6ps9cyFzo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <br>
+
+       <br> </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p></p>
+    </div>
+
+      </p>
+    </div>
+  </div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+
+<!-- Container (Me time) -->
+<div class="w3-content w3-container w3-padding-64" id="metime">
+  <h3 class="w3-center">ME TIME</h3>
+  <p class="w3-center"><em>Check out these YouTube Videos for some Me Time motivation!<br></em></p><br>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center"></h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+
+</body>
+</div>
+</html>
+
+
+
+
+<br>
+ <h12> Fitness: </h12>
+<br>
+   Fitness is a great way to relieve stress and calm the body and mind.  There are different variations of fitness routines that help with stress and anxiety.  <br>
+        <br>
+       Yoga is a popular mind-body practice that brings together physical and mental disciplines to help you relax while increasing physical strength and flexibility. It combines poses with controlled breathing and mindfulness. According to Mayo Clinic, yoga can help reduce stress, lower blood pressure, and lower heart rate.
+
+        <br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rXBSXF8VVoI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <br>
+
+        <br>
+
+       Tai Chi is an ancient Chinese non-competitive martial art. It’s popular due to its health benefits and known to be one of the most effective exercises for both mind and body. Like yoga, there are many different styles and forms of Tai Chi. This exercise links flowing physical movements with breathing. According to Tai Chi for Health Institute, studies have shown that Tai Chi improves muscular strength, flexibility, immunity, and can help relieve pain – all while achieving a sense of peace and serenity. Check out this quick introductory to Tai Chi for stress reduction.
+
+    <br> 
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kAKXr-MpCbo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <br>
+
+    <br>
+
+       Kick Boxing burns calories like crazy and helps maintain a high metabolism. Kickboxing is a blend of martial arts and boxing, and can be practiced for general fitness, self-defense, or sport. It reduces stress by teaching proper breathing techniques, building confidence, and giving you an instant energy boost. Smack down your stress with this kickboxing cardio workout.
+
+       <br>
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/F_6ps9cyFzo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <br>
+
+       <br>
+
+ <h13>  Self Care: </h13>
+    <br>
+  <form method="POST" action='/selfcareresults'>
+
+Take this Self-Care quiz! 
+
+    Skin Care <br>
+    <br>
+    Being comfortable in your own skin is such a big aspect in loveing yourself. Your bare face is who you really are and not the person that is covered in a full face of makeup. The real you is being hidden by the mask of someone else. That is why when you take care of your skin to where you feel comfortable goign out bare faed, you are loving yourself even more. 
+    <br>
+    <br>
+    “When you do a skin care routine, you’re usually alone, in your bathroom or somewhere quiet, and it’s just you and the mirror,” Jogi said. “There’s something slightly meditative about just sitting there and taking that 10 minutes just for you.” says Rena Jogi, a dermatologist and affiliated physician with Memorial Hermann Memorial City Medical Center in Houston.  Tatyahna Cameron, a 26-year-old Californian, started a skin care routine for the very reason Jogi suggested. At the beginning and end of each day, it’s a way to unwind from the hectic pressures of her busy schedule.“My skin care routine for me is really just time that I take for myself twice a day,” Cameron said. “I’m able to take a break from whatever the day is throwing at me and just put everything on pause to focus on me.”
+    
+    <a href="https://www.huffingtonpost.com/entry/skin-care-is-self-care_us_5a86e975e4b00bc49f4341dc">Read more on how skin care is also self care</a> <br>
+<br>
+    Steps to have perfectly clear skin:
+    <br>
+    1. Oil Cleanser
+    <br>
+    Purpose: Applied to dry skin, an oil cleanser removes makeup and any other oil-based product debris like sunscreen and pollution particles.
+    <br>
+    2. Foam Cleanser
+    <br>
+    Purpose: “Believe it or not, after one cleanse, you’re still going to have stuff left over,” says Cho, the board-certified esthetician behind Soko Glam and author of The Little Book of Skin Care,. This water-based cleanser is applied to wet skin and removes impurities like sweat and dirt. After double cleansing (first with oil then with foam), not a hint of grime will be left to hinder your skin’s health.
+    <br>
+    3. Exfoliator
+    <br>
+    Purpose: Exfoliation not only cleans out clogged pores, but it also sloughs off dead skin cells. When you remove this dull layer of cells, brighter skin is revealed. This step is not recommended for daily use. If you have sensitive skin, you’ll only want to exfoliate once a week. If you have a tougher complexion, you can do it more regularly (about three times a week).
+    <br>
+    4. Toner 
+    <br>
+    Purpose: “After you cleanse so many times, your skin is in a fragile state,” explains Cho. “So you want to really hydrate it.” She also explains that toner acts as a way to prep the skin, so it’ll absorb the following treatments better.
+    5. Essence
+    <br>
+    Purpose: The essence is really the heart of Korean skin care, a step that is credited to their culture. Cho claims it’s of the most important parts of the routine. “It’s a treatment product similar to serums, boosters, or ampoules; but it’s more watery in consistency then the rest of those products, so it comes out like a toner.”
+    <br>
+    6. Serum, Boosters, or Ampoule Treatments
+    <br>
+    Purpose: Cho explains that this is not a necessary step for everyone. “If you don’t have brown spots or pigmentation, you don’t really need to use [a treatment],” she says.
+    <br>
+    7. Face mask
+    <br>
+    Purpose: The purpose of your mask depends on what your skin needs. Cho recommends a hydrating mask like Skinfood Hydro Fitting Snail Mask Sheet. But you can also choose one for brightening that may be packed with vitamin C. This is not an every-night step, you really only need to do it twice a week. In fact, Cho explains that you can swap a sheet mask for a serum or essence to cut time off your routine. “The mask contains those treatment products already,” she explains.
+    <br>
+    8. Eye Cream
+    <br>
+    Purpose: Depending on the eye cream you choose, this could focus on everything from fine lines to dark circles. Basically, if you have any undereye concerns, there’s a cream for it.
+    <br>
+    9. Face cream
+    <br>
+    Purpose: Depending on the eye cream you choose, this could focus on everything from fine lines to dark circles. Basically, if you have any undereye concerns, there’s a cream for it.
+    <br>
+    10. SPF 
+    <br>
+    Purpose: “We’re pretty obsessed about SPF,” says Cho. It seems self-explanatory, but we can never stress enough how important sun protection is on a daily basis. Cho claims that it’s applying SPF regularly that’s the biggest differentiator in the Korean regimen.
+    <br>
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/PTbrcjeeBKs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
