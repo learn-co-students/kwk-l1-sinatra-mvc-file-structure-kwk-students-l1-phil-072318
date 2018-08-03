@@ -162,7 +162,7 @@ def mood(string)
 @@avengersAOU += 1
 @@avengersIW += 1
 
-  elsif string == "Comical"
+  elsif string == "Funny"
 @@iron_man2 += 1
 @@thor += 1
 @@thorTDW += 1
