@@ -13,10 +13,6 @@ class ApplicationController < Sinatra::Base
     erb :peaceofmind
   end
   
-  get '/areyouvalid'do
-    erb :areyouvalid
-  end
-  
   get '/metime'do
     erb :metime
   end
@@ -25,7 +21,4 @@ class ApplicationController < Sinatra::Base
     erb :physicalhealth
   end
   
-   post '/areyouvalidresults' do
-	"#{params[:name]}, you're #{params[:gender]}, #{params[:race]}, and #{params[:sexuality]}. But you're also incredibly #{params[:trait]}--and 100% valid!"
-  end
 end

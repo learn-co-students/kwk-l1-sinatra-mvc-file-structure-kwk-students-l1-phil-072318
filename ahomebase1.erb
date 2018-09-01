@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <title>The Triple AAA</title>
+<html> 
+<head>
+  <title></title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
@@ -12,9 +12,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <style>
-
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
@@ -27,19 +25,21 @@ body, html {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+
     background-size: cover;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url("https://i.ytimg.com/vi/zQdADhd-FGY/hqdefault.jpg");
+    background-image: url('https://pre00.deviantart.net/d489/th/pre/i/2013/321/5/2/puffy_white_cloud_by_muffet1-d6unjqx.jpg');
     min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (me time) */
 .bgimg-2 {
-    background-image: url("/w3images/parallax2.jpg");
-    min-height: 400px;
+    background-image: url("https://78.media.tumblr.com/cd91deeae7bc611c84e77e9cbb04c345/tumblr_o4brh6hPeH1v3y85mo1_500.png");
+    min-height: 500px;
+    width: auto;
 }
 
 /* Third image (Contact) */
@@ -66,114 +66,119 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
+    <a href="/" class="w3-bar-item w3-button"> HOME</a>
+    <a href="#aboutus" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cloud"></i> ABOUT US</a>
+    <a href="#metime" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cloud"></i> ME TIME</a>
+    <a href="/physicalhealth" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cloud"></i> PHYSICAL HEALTH</a>
+    <a href="/peaceofmind" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cloud"></i> RESOURCES</a>
     </a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <a href="#peaceofmind" class="w3-bar-item w3-button" onclick="toggleFunction()"> RESOURCES</a>
+    <a href="#metime" class="w3-bar-item w3-button" onclick="toggleFunction()"> ME TIME</a>
+    <a href="#physicalhealth" class="w3-bar-item w3-button" onclick="toggleFunction()"> PHYSICALHEALTH</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">The <span class="w3-hide-small">Triple</span> AAA</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">CLOUD </span>9</span>
   </div>
 </div>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT US</h3>
-  <p class="w3-center"></p>
-  <p>Our website, The Triple AAA, is about informing people about 2nd Generation Americans - children of immigrants who became naturalized but were born and raised in America.  This website explains the stereotypical Afican-American and Asian-American children of immigrants.  The goal of this project is to understand from the point of view of these children their understanding of "fitting in."</p>
-  <br>
-  <h3 class="w3-center">ABOUT THE CREATORS</h3>
-  <br>
-  <p class="w3-center"></p>
-    <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>Isabelle Heng</h3>
-      <p class="w3-opacity">Co-Creator</p>
-      <p>Isabelle is 15 years old and a rising sophmore at Ocean City High School.  She is from a Korean and Cambodian decent, and knows how to speak Korean and is in the process of reading and writing Korean.  </p>
+<!-- Container (Resources/Peaceofmind) -->
+<div class="w3-content w3-container w3-padding-64" id="aboutus">
+  <h3 class="w3-center"> ABOUT US</h3>
+  <p class="w3-center"><em> We are a group of three young pioneers hoping to encourage and spread self-love by collaborating and creating a cloud of the future. Our goal is to help you embrace yourself and everything special about you--while maintaining a healthy lifestyle and self image. </em></p>
+  <p> Have any questions? Contact us at mycloud9bim@gmail.com </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i> By: Miya, Izzy, Bhavana</b></p><br>
+      <img src="http://www.quoteambition.com/wp-content/uploads/2017/03/love-yourself-always-quote.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="10">
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Aderonke Adejare</h3>
-      <p class="w3-opacity">Co-Creator</p>
-      <p>Aderonke Adejare is 16 years old and a rising junior at Clearview Regional High School. She is from Nigerian descent. She enjoys learning about and advocating about racial & gender relations and mental health.</p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Mahitha Penmetsa</h3>
-      <p class="w3-opacity">Co-Creator</p>
-      <p>Mahitha Penmetsa is 14 years old and freshman at Downingtown East High. She comes from an Indian background and enjoys reading news about current affairs concerning social discrimination.</p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Siri Dandu</h3>
-      <p class="w3-opacity">Co-Creator</p>
-      <p>Siri Dandu is a 14 years old and a freshman at Downingtown East High School. She is from Indian descent and loves to learn about social discrimination and differnet languages and culture. </p>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p> This website acts as a safe haven for your inner self. We hope you use it to accept every flaw and every perfection you have. But more importantly, let it elevate to your own personal cloud 9.
+      <br>
+      <form method="POST" action="/areyouvalidresults">
+  <p>Your name (example: Karen): <input type="text" name="name"></p>
+  <p>Your sexuality (example: bisexual): <input type="text" name="sexuality"></p>
+  <p>Your race (example: African American): <input type="text" name="race"></p>
+  <p>Your gender (example: female): <input type="text" name="gender"></p>
+  <p>Your favorite personal trait (example: generous): <input type="text" name="trait"></p>
+  <input type="submit">
+</form>
+<br>
+<iframe src="https://open.spotify.com/embed/user/21miya/playlist/3U5fbva6lLMv919ZE1qFV7" width="375" height="325" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+      </p>
     </div>
   </div>
+  </div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+<div class="bgimg-2 w3-display-container w3-opacity-min" style="width: 100%;">
+  <div class="w3-display-middle" style="width: 100%;">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+<!-- Container (Me time) -->
+<div class="w3-content w3-container w3-padding-64" id="metime">
+  <h3 class="w3-center">ME TIME</h3>
+  <p class="w3-center"><em>Check out these YouTube Videos for some Me Time motivation!<br></em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      How To: A Bubble Bath
+      <iframe width="175" height="125" src="https://www.youtube.com/embed/o7zJUuNTA-o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      Mindful Drawing
+     <iframe width="175" height="125" src="https://www.youtube.com/embed/0kcAFq7C_CA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      Self Care Tips
+      <iframe width="175" height="125" src="https://www.youtube.com/embed/LGD5-xGKCfI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      Self Confidence (Michelle Phan)
+      <iframe width="175" height="125" src="https://www.youtube.com/embed/20p5o6QaQfg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      Tips to live a Better Life
+      <iframe width="175" height="125" src="https://www.youtube.com/embed/i-sIlZwm5ME" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      Self Confidence (Ted Talk)
+      <iframe width="175" height="125" src="https://www.youtube.com/embed/uOrzmFUJtrs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      Mood Swings Tips
+      <iframe width="175" height="125" src="https://www.youtube.com/embed/13mVo51_Jsc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      Tips to relax (Oprah Winfrey)
+      <iframe width="175" height="125" src="https://www.youtube.com/embed/m8HVoN1uTtM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
 </div>
 
@@ -207,7 +212,7 @@ body, html {
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
       </div>
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
       <form action="/action_page.php" target="_blank">
@@ -295,6 +300,7 @@ To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
-</body>
-</html>
 
+</body>
+</div>
+</html>
