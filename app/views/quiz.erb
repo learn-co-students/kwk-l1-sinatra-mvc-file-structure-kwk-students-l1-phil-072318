@@ -17,9 +17,6 @@ ques { font-family: Cuprum; font-size: 24px; font-style: normal; font-variant: n
 prompts { font-family: Cuprum; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
 
 
-button_color {
-  color = "#31E3AE"
-}
 
 h1 { font-family: "Abril Fatface"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Abril Fatface"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }  p { font-family: "Cuprum"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Cuprum"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Cuprum"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; } pers { font-family: "Abril Fatface"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
 
@@ -108,9 +105,7 @@ body, html {
         </ul>
     </div>
     <div class="container text-center hide results">
-        <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results1.jpg" class="results col-md-4 col-sm-4 col-xs-4">
-        <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results2.jpg" class="results col-md-4 col-sm-4 col-xs-4">
-        <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results3.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+      <a href="http://tinypic.com?ref=detr9u" target="_blank"><img src="http://i66.tinypic.com/detr9u.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
     </div>
     <!-- <div class="container progress">
         <div id="intro-bar" class="progress-bar" style="width: 15%" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
@@ -279,7 +274,7 @@ function createValueButtons() {
 
 createPromptItems();
 createValueButtons();
-document.getElementById("button").className = 'button_color';
+
 // Keep a running total of the values they have selected. If the total is negative, the user is introverted. If positive, user is extroverted.
 // Calculation will sum all of the answers to the prompts using weight of the value * the weight of the prompt.
 var total = 0;
@@ -341,7 +336,7 @@ $('#submit-btn').click(function () {
         // console.log(document.getElementById('intro-bar').style.width);
         // document.getElementById('intro-bar').innerHTML= ((total / 60) * 100) + '%';
         
-            document.getElementById('results').innerHTML = '<b>You are a stereotyper!</b><br><br>\
+           document.getElementById('results').innerHTML ='<b>You are a stereotyper!</b><br><br>\
         Though you might not stereotype people in all aspects of your life, you stereotype enough that it is a concern. There may be many times you judge someone based on your past experiences or the experiences of those close to you, meaning you missed out on the oppurtunity to meet someone who might have been a nice aquantince, or missed out on some amazing oppurtunities. You might not even know that you make these stereotypes, it just comes as a habit after looking at a certain group of people one way for a long time. It is important to remember that you should not group people together based off a negative experience, and let them prove themselves before you judge. This will be a habit that is hard to break as you might not even know you are doing it, but with some hardwork you can over come this! \n\
 <br><br>\
 And remember, always be yourself no matter what people think of you!\n\
