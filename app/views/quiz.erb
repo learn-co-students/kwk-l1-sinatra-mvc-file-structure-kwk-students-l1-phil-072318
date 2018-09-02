@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+ques { font-family: Cuprum; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+prompts { font-family: Cuprum; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+
+
+button_color {
+  color = "#31E3AE"
+}
+
+h1 { font-family: "Abril Fatface"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Abril Fatface"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }  p { font-family: "Cuprum"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Cuprum"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Cuprum"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; } pers { font-family: "Abril Fatface"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Abril Fatface", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://usatbnqt.files.wordpress.com/2013/04/night_zpsb4dfe5b9.gif?w=1000');
+    min-height: 100%;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">RACE STEREOTYPE <i class="fa fa-street-view"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/east_asian" class="w3-bar-item w3-button">East Asian</a>
+        <a href="/south_asian" class="w3-bar-item w3-button">South Asian</a>
+        <a href="/african" class="w3-bar-item w3-button">African</a>
+      </div>
+    </div>
+    <a href="/fitin" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star-half-o"></i> FITTING IN</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+    <a href="/quiz" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-question"></i> QUIZ</a>
+    <a href="/how_do_you_feel" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paper-plane-o"></i> YOUR FEELINGS?</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">QUIZ <span class="w3-hide-small"></span></span>
+  </div>
+</div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personality Test</title>
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head><br><br>
+<!-- BODY -->
+<body>
+    <div class="container text-center">
+        <pers><h1>Stereotype Test<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface" /></h1></pers>
+    </div><br><br>
+    <div class="container text-center">
+        <ul id="quiz" class="list-group">
+        </ul>
+    </div>
+    <div class="container text-center hide results">
+        <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results1.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+        <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results2.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+        <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results3.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+    </div>
+    <!-- <div class="container progress">
+        <div id="intro-bar" class="progress-bar" style="width: 15%" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+            15%
+        </div>
+        <div id="extro-bar" class="progress-bar bg-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+            30%
+        </div>
+    </div> -->
+    <div class="container text-center results hide">
+        <p id="results"></p>
+    </div>
+    <div class="container text-center bottom">
+        <button id="submit-btn" class="btn btn-primary btn-lg">Submit</button>
+        <button id="retake-btn" class="hide btn btn-primary btn-lg">Retake Quiz</button>
+    </div>
+    <!-- SCRIPTS -->
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- CUSTOM -->
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cuprum" /><script>
+  
+      // A personality quiz
+// This is an array of objects that stores the personality trait that is prompted to the user and the weight for each prompt. 
+// If a personality trait is considered more introverted, it will have a negative weight.
+// If a personlity trait is considered more extroverted, it will have a positive weight.
+var prompts = [
+{
+    prompt: 'Asians are smart',
+    weight: -1,
+    class: 'group0'
+},
+{
+    prompt: 'White Americans are obese and lazy.',
+    weight: -1,
+    class: 'group1'
+},
+{
+    prompt: 'Mexicans are illegal immigrants.',
+    weight: -1,
+    class: 'group2'
+},
+{
+    prompt: 'Muslims and Arabs are illegal immigrants.',
+    weight: -1,
+    class: 'group3'
+},
+{
+    prompt: 'Irish people are drunks and eat potatoes',
+    weight: -1,
+    class: 'group4'
+},
+{
+    prompt: 'Blacks are violent and are drug abusers.',
+    weight: -1,
+    class: 'group5'
+},
+{
+    prompt: 'Asians are good at math.',
+    weight: 1,
+    class: 'group6'
+},
+{
+    prompt: 'Blacks are poor.',
+    weight: 1,
+    class: 'group7'
+},
+{
+    prompt: 'Asians like to eat rice and drive slow.',
+    weight: 1,
+    class: 'group8'
+},
+{
+    prompt: 'Blacks can not process things as fast as others.',
+    weight: 1,
+    class: 'group9'
+},
+{
+    prompt: 'Americans can be friendly and generous, but also arrogant and impatient.',
+    weight: 1,
+    class: 'group10'
+},
+{
+    prompt: 'Mexicans do not do well in school.',
+    weight: 1,
+    class: 'group11'
+}
+]
+// This array stores all of the possible values and the weight associated with the value. 
+// The stronger agreeance/disagreeance, the higher the weight on the user's answer to the prompt.
+var prompt_values = [
+{
+    value: 'Strongly Agree', 
+    class: 'btn-default btn-strongly-agree',
+    weight: 5
+},
+{
+    value: 'Agree',
+    class: 'btn-default btn-agree',
+    weight: 3,
+}, 
+{
+    value: 'Neutral', 
+    class: 'btn-default',
+    weight: 0
+},
+{
+    value: 'Disagree',
+    class: 'btn-default btn-disagree',
+    weight: -3
+},
+{ 
+    value: 'Strongly Disagree',
+    class: 'btn-default btn-strongly-disagree',
+    weight: -5
+}
+]
+// For each prompt, create a list item to be inserted in the list group
+function createPromptItems() {
+    for (var i = 0; i < prompts.length; i++) {
+        var prompt_li = document.createElement('li');
+        var prompt_p = document.createElement('p');
+        var prompt_text = document.createTextNode(prompts[i].prompt);
+        prompt_li.setAttribute('class', 'list-group-item prompt');
+        prompt_p.appendChild(prompt_text);
+        prompt_li.appendChild(prompt_p);
+        document.getElementById('quiz').appendChild(prompt_li);
+    }
+}
+// For each possible value, create a button for each to be inserted into each li of the quiz
+// function createValueButtons() {
+    
+//  for (var li_index = 0; li_index < prompts.length; li_index++) {
+//      for (var i = 0; i < prompt_values.length; i++) {
+//          var val_button = document.createElement('button');
+//          var val_text = document.createTextNode(prompt_values[i].value);
+//          val_button.setAttribute('class', 'value-btn btn ' + prompt_values[i].class);
+//          val_button.appendChild(val_text);
+//          document.getElementsByClassName('prompt')[li_index].appendChild(val_button);
+//      }
+//  }
+// }
+
+function createValueButtons() {
+    for (var li_index = 0; li_index < prompts.length; li_index++) {
+        var group = document.createElement('div');
+        group.className = 'btn-group btn-group-justified';
+        for (var i = 0; i < prompt_values.length; i++) {
+            var btn_group = document.createElement('div');
+            btn_group.className = 'btn-group';
+            var button = document.createElement('button');
+            var button_text = document.createTextNode(prompt_values[i].value);
+            button.className = 'group' + li_index + ' value-btn btn ' + prompt_values[i].class;
+            button.appendChild(button_text);
+            btn_group.appendChild(button);
+            group.appendChild(btn_group);
+            document.getElementsByClassName('prompt')[li_index].appendChild(group);
+        }
+    }
+}
+
+createPromptItems();
+createValueButtons();
+document.getElementById("button").className = 'button_color';
+// Keep a running total of the values they have selected. If the total is negative, the user is introverted. If positive, user is extroverted.
+// Calculation will sum all of the answers to the prompts using weight of the value * the weight of the prompt.
+var total = 0;
+// Get the weight associated to group number
+function findPromptWeight(prompts, group) {
+    var weight = 0;
+    for (var i = 0; i < prompts.length; i++) {
+        if (prompts[i].class === group) {
+            weight = prompts[i].weight;
+        }
+    }
+    return weight;
+}
+// Get the weight associated to the value
+function findValueWeight(values, value) {
+    var weight = 0;
+    for (var i = 0; i < values.length; i++) {
+        if (values[i].value === value) {
+            weight = values[i].weight;
+        }
+    }
+    return weight;
+}
+// When user clicks a value to agree/disagree with the prompt, display to the user what they selected
+$('.value-btn').mousedown(function () {
+    var classList = $(this).attr('class');
+    // console.log(classList);
+    var classArr = classList.split(" ");
+    // console.log(classArr);
+    var this_group = classArr[0];
+    // console.log(this_group);
+    // If button is already selected, de-select it when clicked and subtract any previously added values to the total
+    // Otherwise, de-select any selected buttons in group and select the one just clicked
+    // And subtract deselected weighted value and add the newly selected weighted value to the total
+    if($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        total -= (findPromptWeight(prompts, this_group) * findValueWeight(prompt_values, $(this).text()));
+    } else {
+        // $('[class='thisgroup).prop('checked', false);
+        total -= (findPromptWeight(prompts, this_group) * findValueWeight(prompt_values, $('.'+this_group+'.active').text()));
+        // console.log($('.'+this_group+'.active').text());
+        $('.'+this_group).removeClass('active');
+        // console.log('group' + findValueWeight(prompt_values, $('.'+this_group).text()));
+        // $(this).prop('checked', true);
+        $(this).addClass('active');
+        total += (findPromptWeight(prompts, this_group) * findValueWeight(prompt_values, $(this).text()));
+    }
+    console.log(total);
+})
+$('#submit-btn').click(function () {
+    // After clicking submit, add up the totals from answers
+    // For each group, find the value that is active
+    $('.results').removeClass('hide');
+    $('.results').addClass('show');
+    
+    
+    if(total > 0) {
+        // document.getElementById('intro-bar').style.width = ((total / 60) * 100) + '%';
+        // console.log(document.getElementById('intro-bar').style.width);
+        // document.getElementById('intro-bar').innerHTML= ((total / 60) * 100) + '%';
+        
+            document.getElementById('results').innerHTML = '<b>You are a stereotyper!</b><br><br>\
+        Though you might not stereotype people in all aspects of your life, you stereotype enough that it is a concern. There may be many times you judge someone based on your past experiences or the experiences of those close to you, meaning you missed out on the oppurtunity to meet someone who might have been a nice aquantince, or missed out on some amazing oppurtunities. You might not even know that you make these stereotypes, it just comes as a habit after looking at a certain group of people one way for a long time. It is important to remember that you should not group people together based off a negative experience, and let them prove themselves before you judge. This will be a habit that is hard to break as you might not even know you are doing it, but with some hardwork you can over come this! \n\
+<br><br>\
+And remember, always be yourself no matter what people think of you!\n\
+<br><br>\
+People are much deeper than stereotypes. That is the first place our minds go. Then you get to know them, and you hear their stories, and you say "I would have never had guessed." - Carson Kressley';
+        
+    } else{
+        document.getElementById('results').innerHTML = '<b>You only slightly stereotupe or do not stereotype at all!</b><br><br>\
+        Though you might not stereotype people in all aspects of your life, there might be one or two times you might do so! That is completely okay though. In the world we live in today, a little bit of judgement is expected, but you make sure to not let that first impression completely bias how you view the person when you first talk to them. This skill will be helpful in making new friends and finding more oppurtunities. \n\
+<br><br>\
+And remember, always be yourself no matter what people think of you!\n\
+<br><br>\
+"I have never concerned myself with labels. What matters to me is my own estimation." - Jean Dujardin';
+    }
+    // Hide the quiz after they submit their results
+    $('#quiz').addClass('hide');
+    $('#submit-btn').addClass('hide');
+    $('#retake-btn').removeClass('hide');
+})
+// Refresh the screen to show a new quiz if they click the retake quiz button
+$('#retake-btn').click(function () {
+    $('#quiz').removeClass('hide');
+    $('#submit-btn').removeClass('hide');
+    $('#retake-btn').addClass('hide');
+    $('.results').addClass('hide');
+    $('.results').removeClass('show');
+})
+
+document.getElementById("button").bgcolor="#31E3AE";
+    </script><br><br>
+    </ques>
+</body>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+</script>
+</body>
+</div>
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 10086868;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/10086868/">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->
+</html>
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <title>East Asian</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href= "https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('http://www.jcie.or.jp/thinknet/jck/banner3-eng.jpg');
+    min-height: 100%;
+   background-position: top; -2 cm
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+    
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/" class="w3-bar-item w3-button">HOME</a>
+    <a href="/#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">RACE STEREOTYPE <i class="fa fa-street-view"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/east_asian" class="w3-bar-item w3-button">East Asian</a>
+        <a href="/south_asian" class="w3-bar-item w3-button">South Asian</a>
+        <a href="/african" class="w3-bar-item w3-button">African</a>
+      </div>
+    </div>
+    <a href="/fitin" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star-half-o"></i> FITTING IN</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+    <a href="/quiz" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-question"></i> QUIZ</a>
+    <a href="/how_do_you_feel" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paper-plane-o"></i> YOUR FEELINGS?</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EAST <span class="w3-hide-small">ASIA</span></span>
+  </div>
+</div>
+
+
+<!-- Container (East Asian) -->
+<div class="w3-content w3-container w3-padding-64" id="aboutus">
+  <h3 class="w3-center"> <font size="+3">East Asians</font></h3>
+  <p class="w3-center"></p>
+  <p><br>
+       <font size="+1">East Asians are seen as skinny, mathamatically inteligent, musically talented; specifily violin and piano, and are mistaken for one other.  They are good at karate and teakwondo.  East Asian children are very obidient and polite around family and friends.  In school they are stereotyped as the nerds or the genius in the class and are the quite ones out if the bunch and not the "popular kids."  They have a very traditional life style because of their parents and are expected to have a bright future, such as being a doctor, lawyers, accounting, or to make a lot of money.  </font>
+</div>
+
+<!-- Container (Korean) -->
+<div class="w3-content w3-container w3-padding-64" id="aboutus">
+  <h3 class="w3-center"> <font size="+3">Korean Translation </font></h3>
+  <p class="w3-center"></p>
+  <p><br>
+       <font size="+1">동양인은 마른 체형, 수학적으로 지적이고, 음악적으로 재능이있다. 구체적으로 바이올린과 피아노이며, 다른 하나와 오인됩니다. 그들은 가라데와 티크원을 잘한다. 동아시아의 어린이들은 가족과 친구들을 매우 순종적이고 예의 바릅니다. 학교에서 그들은 교실에있는 괴상한 또는 천재로 고정 관념이 있고 무리가 아니라 "대중적인 아이"인 경우에 확실히이다. 그들은 부모 때문에 매우 전통적인 생활 방식을 가지고 있으며 의사, 변호사, 회계 또는 많은 돈을 버는 것과 같은 밝은 미래가있을 것으로 예상됩니다.  </font>
+</div>
+
+<!-- Container (Chinese) -->
+<div class="w3-content w3-container w3-padding-64" id="aboutus">
+  <h3 class="w3-center"> <font size="+3">Chinese Translation </font></h3>
+  <p class="w3-center"></p>
+  <p><br>
+       <font size="+1">东亚人被认为是瘦弱的，在数学上很聪明，有音乐天赋; 特别是小提琴和钢琴，并被误认为是另一个。 他们擅长空手道和跆拳道。 东亚儿童对家人和朋友非常有礼貌和礼貌。 在学校里，他们被定型为课堂上的书呆子或天才，如果是一群而不是“受欢迎的孩子”，他们就是相当出色的人。 由于父母的缘故，他们有着非常传统的生活方式，并且有望拥有光明的未来，比如做医生，律师，会计或赚很多钱。  </font>
+</div>
+
+<!-- Container (Japanese) -->
+<div class="w3-content w3-container w3-padding-64" id="aboutus">
+  <h3 class="w3-center"> <font size="+3">Japanese Translation </font></h3>
+  <p class="w3-center"></p>
+  <p><br>
+       <font size="+1">東アジア人は皮肉で、数学的に知的で、音楽的に才能のある人として見られる。 具体的にはバイオリンとピアノであり、互いに誤解されている。 彼らは空手とチークウンドをよくしています。 東アジアの子供たちは、家族や友人の周りに非常に敬意を表し、丁寧です。 学校では、彼らはクラスの中でオタクや天才としてステレオタイプされていて、群れであって「人気のある子供」ではないとすれば、かなりのものです。 彼らは両親のために非常に伝統的な生活様式を持っており、医者、弁護士、経理、またはたくさんのお金を稼ぐなどの明るい未来を期待されています。  </font>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+</script>
+
+</body>
+</div>
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 10086868;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/10086868/">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->
+</html>

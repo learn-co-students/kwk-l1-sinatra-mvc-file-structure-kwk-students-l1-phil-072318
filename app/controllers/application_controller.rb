@@ -9,16 +9,28 @@ class ApplicationController < Sinatra::Base
   	erb :homebase
   end
   
-  get '/peaceofmind'do
-    erb :peaceofmind
+  get '/east_asian'do
+    erb :east_asian
   end
   
-  get '/metime'do
-    erb :metime
+  get '/south_asian'do
+    erb :south_asian
   end
   
-  get '/physicalhealth'do
-    erb :physicalhealth
+  get '/african'do
+    erb :african
+  end
+  
+  get '/fitin'do
+    erb :fitin
+  end
+  
+  get '/how_do_you_feel'do
+    erb :how_do_you_feel
+  end
+  
+  get '/quiz'do
+    erb :quiz
   end
   
 end
