@@ -6,26 +6,56 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-  	erb :homebase
+  	erb :homepage
   end
   
-  get '/peaceofmind'do
-    erb :peaceofmind
+  get '/basicliving' do
+  	erb :basicliving
   end
   
-  get '/areyouvalid'do
-    erb :areyouvalid
+  get '/connect' do
+  	erb :connect
   end
   
-  get '/metime'do
-    erb :metime
+  get '/howtoimmigrate' do
+  	erb :howtoimmigrate
   end
   
-  get '/physicalhealth'do
-    erb :physicalhealth
+  get '/resources' do
+  	erb :resources
   end
   
-   post '/areyouvalidresults' do
-	"#{params[:name]}, you're #{params[:gender]}, #{params[:race]}, and #{params[:sexuality]}. But you're also incredibly #{params[:trait]}--and 100% valid!"
+  get '/store' do
+  	erb :store
+  end
+  
+  get '/whyimmigrate' do
+  	erb :whyimmigrate
   end
 end
+
+#THIS WAS THE CODE FOR MYCLOUD9 - THE APPLICATION CONTROLLER WILL NOT RUN THIS!! 
+
+# get '/' do
+#  	erb :homebase
+#  end
+  
+#! get '/peaceofmind'do
+# erb :peaceofmind
+#  end
+  
+#  get '/areyouvalid'do
+ #   erb :areyouvalid
+ # end
+  
+ # get '/metime'do
+  #  erb :metime
+  #end
+  
+  #get '/physicalhealth'do
+  #  erb :physicalhealth
+  #end
+  
+ #  post '/areyouvalidresults' do
+	#"#{params[:name]}, you're #{params[:gender]}, #{params[:race]}, and #{params[:sexuality]}. But you're also incredibly #{params[:trait]}--and 100% valid!"
+#end 
