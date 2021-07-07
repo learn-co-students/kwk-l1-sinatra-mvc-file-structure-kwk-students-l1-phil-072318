@@ -1,11 +1,181 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sinatra MVC</title>
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
+    <style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: wire one, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #ACCB80;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ACCB80;
+}
+
+.show {
+    display: block;
+}
+
+.label{
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: wire one, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.hometext{
+    font-family: wire one, sans-serif;
+    font-size:28px;
+    line-height: 40px;
+}
+
+ body { 
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border: 0; } 
+    
+footer {
+    background-color: #333;
+    padding: 1px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+</style>
   </head>
 
   <body>
-    <h1>Index</h1>
-    <p> I love programming </p>
+    <div class = "label"><img src="http://i63.tinypic.com/255tgk2.png" border="0" width=100% height=25% alt="Image and video hosting by TinyPic"></div>
+    <div class="navbar">
+  <a href="/">Home</a>
+  <a href="/fitness">Fitness</a>
+  <a href="/food">Food</a>
+  <a href="/mental">Mindfulness</a>
+  <a href="aboutus">About the Creators</a>
+    </div>
+<h1>EAT HEALTHY</h1>
+<center>
+<table>
+<tr>
+<td><img src="http://i66.tinypic.com/2911hrn.png" border="0" width="70" alt="Image and video hosting by TinyPic"></td>
+<td><img src="http://i64.tinypic.com/ab3zfn.jpg" border="0" width="82%" alt="Image and video hosting by TinyPic"></td>
+<td>
+  <img src="http://i66.tinypic.com/2911hrn.png" border="0" width="60" alt="Image and video hosting by TinyPic">
+</td>
+<td><div class="hometext"> Eating right is the first step towards a healthy lifestyle. Food is what you put into your body and how you get energy for your day, so it's very important that you choose the right things to eat. However, a common misconception is that their is only one type of healthy diet. In reality, food is very rarely 100% healthy or 100% unhealthy. It all depends on how much of something you eat and what your goal is. <br><br><center><a href="/food" style="color:green">Click here to explore our food resources</a></center></div></td>
+</tr>
+</table>
+</center>
+<h1>DO HEALTHY</h1>
+<center>
+<table>
+<tr>
+<td><img src="http://i66.tinypic.com/2911hrn.png" border="0" width="70" alt="Image and video hosting by TinyPic"></td>
+<td><img src="http://i65.tinypic.com/f09lig.jpg" border="0" width=82% alt="Image and video hosting by TinyPic"></td>
+<td>
+  <img src="http://i66.tinypic.com/2911hrn.png" border="0" width="60" alt="Image and video hosting by TinyPic">
+</td>
+<td><div class="hometext"> Your body isn't invincible. Exercise is essential to a healthy lifestyle as it keeps your body active and awake. Most people wrongly believe exercise and athletics are solely for young people and athletes. Regular exercise should be a part of everyone's lifestyle. Whether you work out in the gym to build muscle or do yoga at home to start your day, anyone can reap the benefits of exercising <br><br><center><a href="/fitness" style="color:blue">Click here to explore our fitness resources</a></center></div></td>
+</tr>
+</table>
+</center>
+
+<h1>BE HEALTHY</h1>
+<center>
+<table>
+<tr>
+<td><img src="http://i66.tinypic.com/2911hrn.png" border="0" width="70" alt="Image and video hosting by TinyPic"></td>
+<td><img src="http://i63.tinypic.com/2jdqnte.jpg" border="0" width="75%" alt="Image and video hosting by TinyPic">
+<td>
+  <img src="http://i66.tinypic.com/2911hrn.png" border="0" width="1" alt="Image and video hosting by TinyPic">
+</td>
+<td><div class="hometext"> Health isn't strictly physical. To be healthy, you have to also take care of your mind and your emotions. In this day and age it is easy to get caught up with the pressure to diet or look a certain way. It's important to know why you're exercising or dieting and make sure you are doing it in a mentally and physically healthy way. <br><br><center><a href="/mental">Click here to explore our mindfulness resources</a></center></div></td>
+</tr>
+</table>
+</center>
+<br><br><br>
+<footer>
+    <p>© 2018 Kode With Klossy</p>
+  <footemail><center><table><tr>
+    <td width="40%">19lworkosky@student.dasd.org</td>
+    <td width="40%">madison@parkerworld.com</td>
+    <td>sdandu99@gmail.com</td>
+  </tr><tr><td width="40%">@workosky</td><td width="40%">@madisonparke.r</td><td>@siri_dandu</td></tr></table></center></footemail>
+</footer> <br>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
   </body>
 </html>
