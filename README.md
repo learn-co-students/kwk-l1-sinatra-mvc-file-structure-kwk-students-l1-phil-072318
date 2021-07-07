@@ -11,7 +11,7 @@ We'll review the file structure we'll be using for our MVC Sinatra applications.
    and add code to these folders
 3. Complete and run a Sinatra MVC application
 
-## Keeping Code Organized
+## Keeping Code Organize
 
 We could, if we wanted to, write our entire app in a single file. As you might
 imagine, this would make things very difficult to read and debug.

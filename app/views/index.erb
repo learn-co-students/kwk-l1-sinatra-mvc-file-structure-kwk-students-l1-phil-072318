@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sinatra MVC</title>
+    <title>test page</title>
   </head>
-
   <body>
-    <h1>Index</h1>
-    <p> I love programming </p>
+    
+    <h1>SHEinspired</h1>
+    <h2> How are you feeling? </h2>
+    
+    <form method=POST action="/results">
+      <input type="radio" name="emotion" value="sad">Sad
+      <input type="radio" name="emotion" value="stressed">Stressed
+      <input type="radio" name="emotion" value="unmotivated">Unmotivated
+      <input type="submit" value="Inspiration">
+    </form>
   </body>
 </html>
