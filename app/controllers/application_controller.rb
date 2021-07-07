@@ -6,6 +6,28 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-  	erb :index
+  	erb :home_page
+  end
+  
+  get "/aboutus" do
+    erb :about_us
+  end
+  
+  get "/list" do
+    erb :list
+  end
+  
+  get "/quiz" do
+    erb :index
+  end
+  post '/quiz' do 
+        resetquiz
+        marvordc(params[:questionone])
+        oldornew(params[:questiontwo])
+        teamorsolo(params[:questionthree])
+        mood(params[:questionfour])
+        @the_real_result = results
+      erb :results
   end
 end
+

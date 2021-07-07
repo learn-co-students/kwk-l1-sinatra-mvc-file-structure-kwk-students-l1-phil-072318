@@ -1,11 +1,136 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sinatra MVC</title>
-  </head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
+    <style>
+      body {
+background-image: url(http://getwallpapers.com/wallpaper/full/5/2/5/1061511-free-download-captain-marvel-wallpaper-1920x1080-for-ipad-pro.jpg);
+  background-size: 1450px;
+}
+.boxed1 {
+    list-style-type: none;
+    background-color: white;
+    list-style: none;
 
+  }
+
+li a {
+    list-style-type:none;
+    display: inline;
+    text-decoration: none;
+    color: black;
+    float: right;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: solid black 2px;
+    background-color: white;
+    font-size: 16pt;
+    font-family: 'Bree Serif'
+   
+}
+li a:hover {
+    background-color: white;
+    color: grey;
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px  #65696C;
+}    
+h1 { 
+font-family: "Bree Serif";
+}
+p {
+  font-family: "Bree Serif";
+}
+.quiz {
+  font-family: "Bree Serif"; 
+  background-color: #FFFFFF;
+  padding: 10px 20px;
+  margin: 20px;
+  width: 500px;
+  border: 5px solid red;
+}
+.quiz input {
+  
+}
+input[type=radio] {
+    margin: 10px 10px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Bree Serif;
+    font-size: 12pt;
+}
+input[type=radio]:hover {
+  box-shadow: 5px 5px 10px  #65696C;
+  
+  
+}
+
+
+input[type=submit] {
+ background-color: #2471A3;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-left: 1.5%;
+    cursor: pointer;
+    font-family: "Bree Serif";
+    font-size: 12pt;
+}
+
+input[type=submit]:hover {
+  box-shadow: 5px 5px 10px  #65696C;
+  color: #2471A3;
+  background-color: white;
+  
+}
+    </style>
+  </head>
+ 
   <body>
-    <h1>Index</h1>
-    <p> I love programming </p>
+<div class="boxed1"
+  <ul>
+  <li><a href="aboutus">About Us</a></li>
+  <li><a href="list">Movie List</a></li>
+  <li><a href="quiz">Quiz</a></li>
+  <li><a href="/">Home</a></li>
+  </ul>
+  </div>
+    
+    <h1>Take this quiz to find a superhero movie to fit your needs</h1>
+   <!-- Insert Your Form Below -->
+   <div class="quiz">
+    <form method = POST>
+        <p>Marvel movie or DC movie?</p>
+      <input type= "radio" name = "questionone" value = "Marvel">Marvel
+      <input type= "radio" name = "questionone" value = "DC">DC
+      
+      <p>Older movie or a newer movie?</p>
+      <input type= "radio" name = "questiontwo" value = "Old">Old (2008-2014)
+      <input type= "radio" name = "questiontwo" value = "New">New (2015-2018)
+      
+      <p>Team movie or a solo movie?</p>
+      <input type= "radio" name = "questionthree" value = "Team">Team
+      <input type= "radio" name = "questionthree" value = "Solo">Solo
+      
+      <p>Serious movie or a comical movie?</p>
+      <input type= "radio" name = "questionfour" value = "Serious">Serious
+      <input type= "radio" name = "questionfour" value = "Funny">Funny
+      <br>
+      <br>
+      </div>
+      <input type= "submit" value= "Find the movies for you">
   </body>
 </html>
+
+
+
+
+
+
+

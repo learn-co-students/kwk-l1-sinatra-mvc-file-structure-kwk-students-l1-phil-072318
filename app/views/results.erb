@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+<div class="boxed1"
+  <ul>
+  <li><a href="aboutus">About Us</a></li>
+  <li><a href="list">Movie List</a></li>
+  <li><a href="quiz">Quiz</a></li>
+  <li><a href="/">Home</a></li>
+  </ul>
+  </div>
+    <h1>You should watch...</h1>
+  </head>
+<style>
+body {
+background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/DC-Comics-Art-Wallpaper.jpg);
+  background-size: 950px;
+}
+
+.boxed1 {
+    list-style-type: none;
+    background-color: white;
+
+  }
+
+li a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    float: right;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: solid black 2px;
+    background-color: white;
+    font-size: 16pt;
+    font-family: 'Bree Serif'
+}
+li a:hover {
+    background-color: white;
+    color: grey;
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px  #65696C;
+}
+
+h1 { 
+font-family: Bree Serif;
+}
+p {
+  font-family: Bree Serif;
+  font-size: 16pt;
+}
+.quiz {
+  font-family: Bree Serif; 
+  background-color: white;
+  padding: 10px 20px;
+  margin: 20px;
+  width: 500px;
+  border: 5px solid red;
+}
+input[type=radio] {
+    margin: 10px 10px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Bree Serif;
+    font-size: 12pt;
+}
+input[type=radio]:hover {
+  box-shadow: 5px 5px 10px  #65696C;
+  
+  
+}
+
+
+input[type=submit] {
+ background-color: #2471A3;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-left: 1.5%;
+    cursor: pointer;
+    font-family: Bree Serif;
+    font-size: 12pt;
+}
+
+input[type=submit]:hover {
+  box-shadow: 5px 5px 10px  #65696C;
+  color: #2471A3;
+  background-color: white;
+  
+}
+     <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
+  
+
+	 </style>
+ </head>
+
+ <body>
+  <%=@the_real_result%>
+  </body>
+</html>
