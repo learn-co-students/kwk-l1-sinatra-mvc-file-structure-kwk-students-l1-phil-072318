@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sinatra MVC</title>
+    <title>SHEinspires</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Pontano+Sans" rel="stylesheet">
+
   </head>
 
-  <body>
-    <h1>Index</h1>
-    <p> I love programming </p>
+ 
+    <img class="logo" src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113997131800/medium/1533217041907/enhance" alt="LOGO" width="300" > 
+    <!--this is the logo-->
+    
+     <div class="topnav">
+  <a class="active" href="/index">Home</a>
+  <a href="/aboutus">About Us</a>
+  <a href="/instagrams">Instagram Inspiration</a>
+          </div> 
+          <!--nav bar-->
+    
+    <img class="banner" src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113997344486/medium/1533226946/enhance" alt="banner" width="100%">
+    
+  <div class=please >
+      <form method=POST action="/results">
+      <label class="container">
+      <input type="radio" name="emotion" value="sad" checked="checked">Sad
+      <span class="checkmark"></span>
+      </label>
+      <label class="container">
+      <input type="radio" name="emotion" value="stressed">Stressed
+      <span class="checkmark"></span>
+      </label>
+      <label class="container">
+      <input type="radio" name="emotion" value="unmotivated"> &nbsp;&nbsp;&nbsp;&nbsp;Unmotivated
+      <span class="checkmark"></span>
+      </label>
+      <input class = "button" type="submit" value="Get Inspiration">
+    </form> 
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+     <!--links to different parts of the page -->
+   
+    
+    <!--  <h5><a href= /sad> Sad</a></h5>-->
+    <!--  <h5><a href= /stressed> Stressed</a></h5>-->
+    <!--<h5><a href= /unmotivated> Unmotivated</a></h5>-->
+    
+
+   
   </body>
 </html>
